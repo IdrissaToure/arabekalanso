@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   <!-- ------------------------Inscription---------------------------- -->
+   <div class="ccc">
+   <div class="in">
+   <section>
+    <div>
+         <div class="inscrir">Inscrir toi si vous n'a pas de compte</div><br>
+      <form class="inscrire">
+        <input type="text" class="form-control" placeholder="nom " [(ngModel)]="nom" name="nom"/><br><br>
+        <input type="text" class="form-control" placeholder=" prénom " [(ngModel)]="prenom" name="prenom"/><br><br>
+        <input type="text" class="form-control" placeholder="adresse email" [(ngModel)]="email" name="email"/><br><br>
+        <input type="password" class="form-control" placeholder="Mot de passe" [(ngModel)]="motDePasse" name="motDePasse"/><br><br>
+        <input type="password" class="form-control" placeholder="Confirmer mot de passe" [(ngModel)]="confirmer" name="confirmer"/><br><br>
+        <button (click)="onSubmit()" class="ins">S'inscrire</button>
+      </form>
+    </div>
+  </section>
+</div>
+</div>
+</ion-content>

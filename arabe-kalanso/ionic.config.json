@@ -1,0 +1,7 @@
+{
+  "name": "Arabe kalanso",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

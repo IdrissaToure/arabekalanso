@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-icon  [routerLink]="['/inscription']" name="arrow-back-outline" class="dd"></ion-icon>
+  <div class="cc">
+  <div class="container">
+    <div class="p"><h2>Bienvenu dans Arabe Kalanso</h2></div>
+    <section class="from">
+
+      <div class="sec-container">
+         <div class="form-wrapper">
+        <div class="card">
+           <div class="card-header">
+                 <div id="forLogin" class="form-header active">Connecter vous pour acce aux cours</div><br>
+            </div>
+                <div class="card-body">
+                        <form>
+                          <input type="text" class="form-control" placeholder="nom utilisateur" name="email" [(ngModel)]="email" /><br><br>
+                          <input type="password" class="form-control" placeholder="mot de passe" name="mdp" [(ngModel)]="password"/><br><br>
+                          <button (click)="onSubmit()" class="con">Connexion</button><br><br>
+                          <button  [routerLink]="['/inscription']" class="ins">S'inscrire</button>
+
+                        </form>
+                   </div>
+             </div>
+         </div>
+      </div>
+      </section>
+
+      </div>
+  </div>
+</ion-content>
+
